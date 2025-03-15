@@ -67,6 +67,10 @@ Fiber optic cables use light to transmit data at high speeds over long distances
 1. **Single-mode fiber (SMF)** – Used for long-distance high-speed data transmission in backbone routers.
 2. **Multi-mode fiber (MMF)** – Used for shorter distances and lower bandwidth applications in switch connections.
 
+
+   ![Single-Mode-vs-Multimode-Fiber-Diagram](https://github.com/user-attachments/assets/3b811f6f-5e36-4bdf-9849-8ff4a5c08b50)
+
+
 ### **Common Connectors for Fiber Optic Cables:**
 1. **SC (Subscriber Connector)** – Push-pull type used in data center switches and routers.
 2. **LC (Lucent Connector)** – Compact and widely used in networking.
