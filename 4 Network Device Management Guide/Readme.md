@@ -1,5 +1,9 @@
 # Network Device Management Guide
 
+
+https://github.com/user-attachments/assets/794a0d21-bf5f-4815-b704-8393bc568fee
+
+
 ## **Device Configuration and Verification**
 
 ### **Theory**
