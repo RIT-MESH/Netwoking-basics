@@ -1,5 +1,9 @@
 # Security Fundamentals Guide
 
+
+https://github.com/user-attachments/assets/6ee7ef8d-a841-4872-8970-4bc5ae252975
+
+
 ## **Security Concepts (Threats, Vulnerabilities, Exploits)**
 
 ### **Theory**
