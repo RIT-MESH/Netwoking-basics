@@ -1,7 +1,10 @@
 # Security Fundamentals Guide
 
+## 🎧 Listen to the Security Fundamentals Guide Audio
 
-https://github.com/user-attachments/assets/6ee7ef8d-a841-4872-8970-4bc5ae252975
+
+https://github.com/user-attachments/assets/a23c5322-6ce4-4866-a107-7778cd1e37c7
+
 
 
 ## **Security Concepts (Threats, Vulnerabilities, Exploits)**
