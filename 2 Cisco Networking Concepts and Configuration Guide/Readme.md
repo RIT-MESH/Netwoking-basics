@@ -1,5 +1,10 @@
 # Cisco Networking Concepts and Configuration Guide
 
+
+https://github.com/user-attachments/assets/fa68bd2a-9109-4bae-a5b8-a5d0ca222feb
+
+
+
 ## VLANs (Virtual Local Area Networks)
 
 ### **Theory**
