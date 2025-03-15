@@ -3,7 +3,11 @@
 ## 🎧 Listen to the Security Fundamentals Guide Audio
 
 
-https://github.com/user-attachments/assets/a23c5322-6ce4-4866-a107-7778cd1e37c7
+
+
+https://github.com/user-attachments/assets/310f48f7-0b53-4aac-9a7f-39306706ef8e
+
+
 
 
 
