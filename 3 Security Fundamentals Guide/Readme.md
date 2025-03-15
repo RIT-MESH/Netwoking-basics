@@ -131,4 +131,222 @@ Router(config)# end
 
 ---
 
-This guide provides an in-depth understanding of **security fundamentals**, including **threats, ACLs, VPNs, AAA, and device hardening**, with **real-world examples and Cisco configurations**.
+## **Cisco TrustSec**
+TrustSec provides role-based access control and policy enforcement.
+
+**Example:** A company wants to restrict network access based on user roles rather than IP addresses, ensuring that only authorized personnel can access sensitive data.
+
+### **How to Configure Cisco TrustSec**
+```cisco
+Switch# configure terminal
+Switch(config)# cts role-based enforcement
+Switch(config)# cts role-based policy
+Switch(config)# end
+```
+
+---
+
+## **Cisco Firepower (NGFW)**
+Firepower Next-Generation Firewall (NGFW) enhances threat detection, application visibility, and network control.
+
+**Example:** A company uses Firepower to detect and block ransomware attacks before they compromise the network.
+
+### **How to Configure Cisco Firepower (NGFW)**
+```cisco
+Firepower# configure terminal
+Firepower(config)# access-list outside_access extended permit tcp any host 192.168.2.10 eq 80
+Firepower(config)# access-group outside_access in interface outside
+Firepower(config)# end
+```
+
+---
+
+## **Secure Boot and Image Verification**
+Secure Boot ensures that only verified software images are loaded onto Cisco devices to prevent unauthorized firmware modifications.
+
+**Example:** A network administrator enables Secure Boot to prevent unauthorized tampering of the device firmware.
+
+### **How to Configure Secure Boot and Image Verification**
+```cisco
+Router# configure terminal
+Router(config)# secure boot-image
+Router(config)# secure boot-config
+Router(config)# end
+```
+
+---
+
+## **Cisco Stealthwatch**
+Cisco Stealthwatch provides real-time network visibility and advanced analytics to detect anomalies and potential threats.
+
+**Example:** An IT security team uses Stealthwatch to identify abnormal traffic patterns and detect insider threats.
+
+### **How to Configure Cisco Stealthwatch**
+```cisco
+Stealthwatch# configure terminal
+Stealthwatch(config)# flow-exporter EXPORTER1
+Stealthwatch(config-flow-exporter)# destination 192.168.1.50
+Stealthwatch(config-flow-exporter)# transport udp 2055
+Stealthwatch(config-flow-exporter)# end
+```
+
+---
+
+
+## **Network Address Translation (NAT) Security**
+NAT is used to hide internal IP addresses, improving security by making it harder for attackers to target internal resources.
+
+**Example:** A company uses NAT to allow multiple private IPs to access the internet with a single public IP.
+
+### **How to Configure NAT on a Cisco Router**
+```cisco
+Router# configure terminal
+Router(config)# interface gigabitEthernet 0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# ip nat inside
+Router(config-if)# exit
+Router(config)# interface serial 0/1/0
+Router(config-if)# ip address 203.0.113.1 255.255.255.0
+Router(config-if)# ip nat outside
+Router(config-if)# exit
+Router(config)# ip nat inside source list 1 interface serial 0/1/0 overload
+Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+Router(config)# end
+```
+
+---
+
+## **Cisco Identity Services Engine (ISE)**
+Cisco ISE provides centralized identity-based access control for wired, wireless, and VPN connections.
+
+**Example:** A university uses Cisco ISE to allow only registered students to access certain resources.
+
+### **How to Configure Cisco ISE**
+```cisco
+Router# configure terminal
+Router(config)# radius-server host 192.168.1.100 auth-port 1812 acct-port 1813 key radius_key
+Router(config)# aaa new-model
+Router(config)# aaa authentication dot1x default group radius
+Router(config)# dot1x system-auth-control
+Router(config)# end
+```
+
+---
+
+## **Cisco AnyConnect Secure Mobility Client**
+Provides remote users with secure VPN access to corporate networks.
+
+**Example:** Employees working from home use Cisco AnyConnect to securely connect to their company's internal network.
+
+### **How to Configure Cisco AnyConnect**
+```cisco
+Router# configure terminal
+Router(config)# webvpn
+Router(config-webvpn)# enable outside
+Router(config-webvpn)# anyconnect enable
+Router(config-webvpn)# end
+```
+
+---
+
+## **Cisco Advanced Malware Protection (AMP)**
+AMP is a cloud-based malware protection and detection tool that identifies and mitigates threats.
+
+**Example:** A Cisco AMP-protected network detects and blocks ransomware before it spreads.
+
+### **How to Configure Cisco AMP**
+```cisco
+Router# configure terminal
+Router(config)# ip http secure-server
+Router(config)# exit
+Router(config)# end
+```
+
+---
+
+## **Cisco Email Security Appliance (ESA)**
+Protects against phishing, malware, and spam attacks targeting corporate email systems.
+
+**Example:** A company uses Cisco ESA to automatically filter malicious attachments from incoming emails.
+
+### **How to Configure Cisco ESA**
+```cisco
+ESA> interfaceconfig
+ESA> listenerconfig
+ESA> policyconfig
+```
+
+---
+
+## **Cisco Web Security Appliance (WSA)**
+Enforces web filtering, malware protection, and internet usage policies.
+
+**Example:** A business blocks access to social media websites for employees using Cisco WSA.
+
+### **How to Configure Cisco WSA**
+```cisco
+WSA> web security
+WSA> set web filtering on
+```
+
+---
+
+## **Cisco Umbrella (Cloud Security)**
+Cloud-based security service providing DNS-layer protection against malicious sites.
+
+**Example:** A school uses Cisco Umbrella to block students from accessing unsafe websites.
+
+### **How to Configure Cisco Umbrella**
+```cisco
+Router# configure terminal
+Router(config)# ip dns server
+Router(config)# ip dns domain cisco.com
+Router(config)# exit
+```
+
+---
+
+## **Cisco SecureX**
+An integrated security platform that provides centralized visibility and automation across Cisco security products.
+
+**Example:** A large enterprise integrates SecureX with its existing Cisco security infrastructure for real-time threat detection.
+
+### **How to Configure Cisco SecureX**
+```cisco
+SecureX> integration enable
+SecureX> security policy apply
+```
+
+---
+
+## **Cisco Zero Trust Security Model**
+Ensures that no user or device is trusted by default, requiring authentication and authorization before granting access.
+
+**Example:** A company enforces multi-factor authentication (MFA) for all employees connecting to the internal network.
+
+### **How to Configure Cisco Zero Trust Security**
+```cisco
+Router# configure terminal
+Router(config)# aaa authentication login default group radius local
+Router(config)# end
+```
+
+---
+
+## **Cisco Adaptive Security Appliance (ASA)**
+A stateful firewall that provides advanced threat protection.
+
+**Example:** A hospital deploys Cisco ASA to monitor and control inbound and outbound network traffic.
+
+### **How to Configure Cisco ASA**
+```cisco
+ASA(config)# access-list inside_access_in extended permit ip any any
+ASA(config)# access-group inside_access_in in interface inside
+```
+
+---
+
+This guide provides an in-depth understanding of **security fundamentals**, including **threats, ACLs, VPNs, AAA, and device hardening**, with **real-world examples, Cisco configurations, IPS, NAC, TrustSec, Firepower NGFW, Secure Boot, Stealthwatch, and many more advanced security mechanisms.**
+
+
+
