@@ -53,6 +53,11 @@ Coaxial cables consist of a central conductor, an insulating layer, a metallic s
 2. **F-Type** – Used for cable TV and broadband internet routers.
 3. **N-Type** – Used in wireless antennas and military applications.
 
+![pasted image 0 (1)](https://github.com/user-attachments/assets/c3505379-e689-476e-9689-90eb6963de1a)
+![pasted image 0 (3)](https://github.com/user-attachments/assets/551c7575-2530-49ad-b69c-b13f7e104463)
+![pasted image 0 (2)](https://github.com/user-attachments/assets/02c337ad-02db-4c13-9865-27c32221b354)
+
+
 ---
 
 ## **3. Fiber Optic Cables**
