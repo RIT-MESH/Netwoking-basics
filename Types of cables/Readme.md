@@ -8,6 +8,9 @@ Twisted pair cables consist of pairs of wires twisted together to reduce electro
 2. **Shielded Twisted Pair (STP)** – Used in environments with high interference.
 3. **Foiled Twisted Pair (FTP)** – Similar to STP but with overall shielding.
 4. **S/FTP (Shielded Foil Twisted Pair)** – Provides maximum protection against interference.
+![UTP-FTP-STP-SFTP-CABLE-800x451](https://github.com/user-attachments/assets/61a41221-fb91-4e22-90b2-fca972da228a)
+
+
 
 ### **Common Categories of Twisted Pair Cables:**
 | Category | Speed & Bandwidth | Use Case |
