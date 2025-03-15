@@ -1,5 +1,9 @@
 # Network Troubleshooting Guide
 
+
+https://github.com/user-attachments/assets/7c32defa-ff20-41f3-8368-2963f98457ea
+
+
 ## **Troubleshooting Methodologies**
 
 ### **Theory**
