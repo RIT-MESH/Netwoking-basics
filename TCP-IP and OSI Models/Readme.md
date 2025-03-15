@@ -1,5 +1,11 @@
 ## TCP/IP and OSI Models Explained
 
+
+https://github.com/user-attachments/assets/534ef2c0-ec54-4f9a-90d4-79c9d4a32799
+
+
+
+
 ### 1. TCP/IP Model
 The **TCP/IP (Transmission Control Protocol/Internet Protocol) Model** is a practical framework used for networking and communication over the internet. It consists of four layers, each handling different networking functions.
 
