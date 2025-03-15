@@ -29,6 +29,10 @@ Twisted pair cables consist of pairs of wires twisted together to reduce electro
 3. **GG45** – Used in Cat 7 networks with switches.
 4. **Tera Connector** – Used in high-speed shielded twisted pair (STP) networks.
 
+![1719075013866](https://github.com/user-attachments/assets/989bd4ac-0e5a-4df2-9d8e-ef202cd3d135)
+
+![download (5)](https://github.com/user-attachments/assets/fe9ac0b3-891d-40aa-b759-53acfe0902e3)
+
 ---
 
 ## **2. Coaxial Cables**
@@ -38,6 +42,11 @@ Coaxial cables consist of a central conductor, an insulating layer, a metallic s
 1. **RG-6** – Used for cable TV, satellite, and broadband internet routers.
 2. **RG-11** – Used for long-distance network connections.
 3. **RG-59** – Used for short-distance video transmission.
+
+![CCTV h6](https://github.com/user-attachments/assets/0de90e6e-8245-4173-94c9-ccc5644ee8f9)
+
+![94ec3302-0145-456e-9815-630ceb3b430b 6de9f3912d3ae3665eb5dc609b81b8b3 (1)](https://github.com/user-attachments/assets/d2d3032c-26e6-4ed3-b816-6b5d5ab777bc)
+
 
 ### **Common Connectors for Coaxial Cables:**
 1. **BNC (Bayonet Neill-Concelman)** – Used in CCTV and radio communications.
